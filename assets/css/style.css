@@ -386,10 +386,12 @@ ul.navbar-nav {
 
 }
 .partner:hover .partnerDescription {
-	display: block;
+	opacity: 1;
+	max-height: 550px;
 }
 .partnerDescription {
-	display: none;
+	display: block;
+	max-height: 0;
 	position: relative;
 	background: #ffffff;
 	border: 2px solid #555555;
@@ -399,6 +401,8 @@ ul.navbar-nav {
 	color: #555555;
 	margin-left: 15%;
 	margin-right: 15%;
+	transition: all 1s;
+	opacity: 0;
 }
 .partnerDescription:after, .partnerDescription:before {
 	bottom: 100%;
