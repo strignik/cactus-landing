@@ -176,7 +176,8 @@ ul.navbar-nav {
 .navbar-inverse ul.navbar-nav li a { padding-top: 20px; padding-bottom: 20px; color: black; opacity: 0.8; }
 .navbar-inverse ul.navbar-nav li a:hover { color: #4bb76f; opacity: 1; }
 .navbar-inverse ul.navbar-nav li a:focus { color: #4bb76f; outline: 0; opacity: 1; }
-
+.navbar-no-bg ul.navbar-nav li a:hover {color: yellow}
+.navbar-no-bg ul.navbar-nav li a:focus {color: yellow}
 .navbar-brand {
 	width: 120px;
 	height: 60px;
@@ -193,7 +194,7 @@ ul.navbar-nav {
 
 .logo {
 	background: url("../img/logo2.png");
-	width: 120px;
+	width: 80px;
 	height: 60px;
 	margin: 0 0 0 10px;
 }
@@ -201,7 +202,9 @@ ul.navbar-nav {
 .navbar-no-bg .logo {
 	background: url("../img/logo1.png");
 }
-
+.navbar-no-bg .logo:hover {
+	background: url("../img/logo3.png");
+}
 
 /***** Top content *****/
 .top-content {
@@ -211,7 +214,7 @@ ul.navbar-nav {
 
 
 .inner-bg {
-    padding: 280px 0;
+    padding: 200px 0;
 }
 
 .top-content .text {
@@ -386,7 +389,7 @@ ul.navbar-nav {
 
 }
 .partner:hover .partnerDescription {
-	opacity: 1;
+	opacity: 0.7;
 	max-height: 550px;
 }
 .partnerDescription {
@@ -397,7 +400,7 @@ ul.navbar-nav {
 	border: 2px solid #555555;
 	margin: 25px 0 0 0;
 	padding: 5px 5px 5px 5px;
-	border-radius: 10px;
+	border-radius: 5px;
 	color: #555555;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -432,6 +435,27 @@ ul.navbar-nav {
 
 /***** Testimonials *****/
 
+.photoCactus {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+.carousel-control.right {
+	background: white;
+}
+.carousel-control.left {
+	background: white;
+}
+.glyphicon.glyphicon-chevron-left {
+	color: #555555;
+}
+.glyphicon.glyphicon-chevron-right {
+	color: #555555;
+}
 .testimonials-container {
 	padding-bottom: 70px;
 }
@@ -484,9 +508,16 @@ ul.navbar-nav {
 
 
 /***** About us *****/
-
+.about-us-h {
+	color: white;
+}
 .about-us-container {
 	padding-bottom: 65px;
+	background: url("../img/backgrounds/1.jpg");
+	color: white;
+}
+.about-us-container.fa{
+	color: white;
 }
 
 .about-us-box {
